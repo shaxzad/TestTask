@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  width: 90%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.todos {
+  font-family: sans-serif;
+  text-align: center;
+}
+.links{
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 10px;
+}
+a{
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(24, 53, 53);
+}
+input {
+  padding: 10px 30px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid gray;
+  margin: 10px;
+  width: 20%;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 10px;
+  background-color: rgb(24, 53, 53);
+  border: none;
+  color: white;
+}
+
+.Delete {
+  background-color: #e02c2c;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid rgb(24, 53, 53);
+  color: rgb(24, 53, 53);
+  -webkit-transition: all 1s ease;
+  transition: all 0.7s ease;
+}
+
+.user {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 5px;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+.user-main {
+  display: flex;
+  justify-content: center;
+}
+
+.user-main form {
+  width: 50%;
+  border-bottom: 1px solid gray;
+  padding: 5px;
+}
+h1 {
+  color: rgb(24, 53, 53);
+  font-size: 40px;
+  text-decoration: underline;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+
+.col-1 {
+  border-right: 1px solid lightgray;
+  height: auto;
+  padding: 20px;
+}
+.col-2 {
+  padding: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.card-title{
+  display: flex;
+  justify-content: center;
+}
