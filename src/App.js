@@ -9,6 +9,7 @@ export default function App() {
         <Link to="/">Task One</Link>
         <Link to="task-two">Task Two</Link>
         <Link to="chat">Chat</Link>
+        <Link to="table-list">table-list</Link>
       </div>
       <RouterView />
     </div>
