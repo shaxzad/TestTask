@@ -10,6 +10,7 @@ export default function App() {
         <Link to="task-two">Task Two</Link>
         <Link to="chat">Chat</Link>
         <Link to="table-list">table-list</Link>
+        <Link to="ChartView">ChartView</Link>
       </div>
       <RouterView />
     </div>

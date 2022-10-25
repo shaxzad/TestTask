@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../index.css"
 
-export const Users = ({ title, id, onEdit, onDelete ,isDeleting}) => {
+export const TodoList = ({ title, id, onEdit, onDelete ,isDeleting}) => {
   const [isEdit, setIsEdit] = useState(false);
   const [deleteId, setDeleteid] =  useState(null)
   const [value, setValue] =  useState(null)

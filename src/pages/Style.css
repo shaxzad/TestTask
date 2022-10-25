@@ -1,6 +1,9 @@
 .Chat-App{
    text-align: center;  
 }
+.charts h2{
+    text-align: center;
+}
 
 .chatBox{
     text-align: center;
@@ -17,4 +20,13 @@
 }
 .addbtn{
     margin-bottom: 10px;
+}
+.charts{
+    width: 90%;
+    margin: auto;
+}
+
+.google-charts{
+    margin-top: 5rem;
+
 }

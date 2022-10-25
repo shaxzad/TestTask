@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Users } from "../components/Users";
-import { AddUser } from "../components/AddUser";
+import { TodoList } from "../components/TodoList";
+import { AddTodo } from "../components/AddTodo";
 import axios from "axios";
 
 export const  Todos =() => {
@@ -88,7 +88,7 @@ export const  Todos =() => {
 
   return (
     <div className="todos">
-      <AddUser isAdding={isAdding} onAdd={onAdd} />
+      <AddTodo isAdding={isAdding} onAdd={onAdd} />
       <div>
         <h1>Todo List</h1>
       </div>
@@ -97,7 +97,7 @@ export const  Todos =() => {
       ) : (
         <div>
           {todoList.map((item) => (
-            <Users
+            <TodoList
               isDeleting={isDeleting}
               id={item.id}
               key={item.id}
